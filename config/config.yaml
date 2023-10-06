@@ -3,7 +3,8 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Sujata2017/Chicken-Disease-Classification/blob/main/Chicken-fecal-images.zip
+  #source_URL: https://github.com/Sujata2017/Chicken-Disease-Classification/blob/main/Chicken-fecal-images.zip
+  source_URL: https://drive.google.com/file/d/1UNewjanUid6j0zx8goO04Quz9ohk5Wkx/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
