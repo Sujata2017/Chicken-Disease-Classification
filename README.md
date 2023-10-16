@@ -31,7 +31,26 @@ conda create -n cnncls python=3.8 -y
 conda activate cnncls
 
 ### STEP 02- install the requirements
+```
 pip install -r requirements.txt
+```
 
-### Finally run the following command
-python app.py
+### STEP 03- Export the environment variables
+```
+export PYTHONPATH=$PYTHONPATH:/path/to/Chicken-Disease-Classification
+export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+```
+
+### STEP 04- Run the application server
+```
+python main.py
+```
+
+
+
+### Deployment Steps:
+1. Build the Docker image of the Source Code
+2. Push the Docker image to Container Registry
+3. Launch the Web App Server in AWS
+4. Pull the Docker image from the container registry to Web App server and run
